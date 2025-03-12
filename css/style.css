@@ -8,14 +8,12 @@
 
 body {
   color: #333;
-  /* background: #f2f2f2; */
-  overflow-x: hidden;
   background-image: url('cloud-background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll; /* This is the default, but you can specify it explicitly */
-  
+  background-attachment: scroll;
+  overflow-x: hidden;
 }
 
 /* UTILITY CLASSES */
@@ -78,8 +76,6 @@ body {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url('cloud-background.jpg') no-repeat center center;
-  background-size: cover; /* Ensure the image covers the entire section */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,10 +118,6 @@ body {
 .about {
   padding: 100px 0;
   text-align: center;
-  background-image: url('about.jpg'); /* Ensure the path is correct and relative to your CSS file */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Center the image */
-  background-size: cover; /* Ensure the image covers the entire section */
 }
 
 .about h2 {
@@ -138,6 +130,60 @@ body {
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* SKILLS SECTION */
+.skills {
+  padding: 100px 0;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.skills-list li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+/* EXPERIENCE SECTION */
+.experience {
+  padding: 100px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.experience h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.experience-list li {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
 
 /* PROJECTS SECTION */
@@ -269,7 +315,8 @@ body {
     display: block;
   }
 
-  .projects .project-list {
+  .projects .project-list,
+  .experience .experience-list {
     flex-direction: column;
     align-items: center;
   }

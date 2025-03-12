@@ -230,15 +230,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akash Agrawal - Portfolio</title>
   <meta name="description" content="Akash Agrawal's Portfolio - Software Engineer | Machine Learning Engineer | Data Scientist" />
   
   <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css" />
@@ -251,6 +248,8 @@
       <nav class="nav">
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -272,11 +271,34 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>
-        I'm a passionate developer with expertise in AI, cloud computing, and data science. 
-        My mission is to create innovative solutions that drive business impact and make a 
-        positive difference in the world.
-      </p>
+      <p>I'm a passionate developer with expertise in AI, cloud computing, and data science. My mission is to create innovative solutions that drive business impact and make a positive difference in the world.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python (Advanced)</li>
+        <li>Machine Learning & Deep Learning Frameworks (TensorFlow, PyTorch)</li>
+        <li>Cloud Computing (AWS, Azure)</li>
+        <li>Data Visualization (Tableau, Power BI)</li>
+        <li>Frontend Development (HTML, CSS, JavaScript)</li>
+        <li>Version Control (Git)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li><strong>Software Engineer at XYZ Corp:</strong> Developed scalable web applications using React and Node.js.</li>
+        <li><strong>Machine Learning Engineer at ABC Tech:</strong> Designed predictive models for customer analytics.</li>
+        <li><strong>Data Scientist at DEF Solutions:</strong> Implemented data pipelines and visualization dashboards.</li>
+      </ul>
     </div>
   </section>
 
@@ -285,16 +307,13 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="project-list">
+        <!-- Example Projects -->
         <div class="project">
           <img src="images/placeholder1.jpg" alt="Project 1" />
           <h3>Project 1</h3>
-          <p>AI-powered image recognition system that accurately identifies objects in real-time.</p>
+          <p>An AI-powered image recognition system that accurately identifies objects in real-time.</p>
         </div>
-        <div class="project">
-          <img src="images/placeholder1.jpg" alt="Project 2" />
-          <h3>Project 2</h3>
-          <p>Spam filter developed using advanced NLP techniques to classify messages with high precision.</p>
-        </div>
+        <!-- Add more projects as needed -->
       </div>
     </div>
   </section>
@@ -303,23 +322,16 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+      <form id="contact-form">
+        <!-- Contact Form Fields -->
+        ...
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Akash Agrawal | All Rights Reserved</p>
-    </div>
-  </footer>
+  ...
+  
+<!-- JavaScript -->
+<script src="./script.js"></script>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
-</body>
-</html>
