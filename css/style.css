@@ -116,7 +116,8 @@ body {
 .about {
   padding: 100px 0;
   text-align: center;
-  background-color: #F9F1F1;
+  background: url('about.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .about h2 {
