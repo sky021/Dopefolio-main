@@ -9,7 +9,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: #30364B;
   /* Full background image across the site */
   background: url('cloudBackground.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -86,7 +86,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: #30364B;
 }
 .hero-content h1 {
   font-size: 3rem;
@@ -114,7 +114,7 @@ body {
 section {
   padding: 100px 0;
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.05);
 }
 .about p {
   max-width: 800px;
@@ -129,13 +129,14 @@ section {
   justify-content: center;
   gap: 15px;
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 .skills .skills-grid li {
-  background: #f8f9fa;
+  background:#30364B;
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: 20px;  
   font-size: 0.9rem;
+  color: #EBF8FF;
 }
 
 /* EXPERIENCE SECTION - Timeline */
@@ -152,13 +153,13 @@ section {
   transform: translateX(-50%);
   width: 4px;
   height: 100%;
-  background: #ccc;
+  background: #30364B;
 }
 .timeline-item {
   position: relative;
   width: 45%;
   padding: 20px;
-  background: #fff;
+  background: #30364B;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
@@ -175,16 +176,16 @@ section {
   top: 20px;
   width: 20px;
   height: 20px;
-  background: #30364B;
+  background: #EBF8FF;
   border-radius: 50%;
   border: 4px solid #fff;
   box-shadow: 0 0 0 4px #30364B;
 }
 .timeline-item:nth-child(odd)::after {
-  right: -10px;
+  right: 20px;
 }
 .timeline-item:nth-child(even)::after {
-  left: -10px;
+  left: 20px;
 }
 .timeline-icon {
   font-size: 1.5rem;
@@ -193,10 +194,11 @@ section {
 .timeline-content h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
+  color: #EBF8FF;
 }
 .timeline-content .date {
   font-size: 0.9rem;
-  color: #777;
+  color: #F9F1F1;
 }
 
 /* PROJECTS SECTION */
@@ -207,8 +209,8 @@ section {
   gap: 30px;
 }
 .project {
-  background: #fff;
-  width: 300px;
+  background: #BAD7E7;
+  width: 400px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -218,18 +220,18 @@ section {
   transform: translateY(-5px);
 }
 .project img {
-  width: 100%;
+  width: 70%;
   display: block;
 }
 .project h3 {
   margin: 15px;
   font-size: 1.2rem;
-  color: #333;
+  color: #30364B;
 }
 .project p {
   margin: 0 15px 15px;
   font-size: 0.95rem;
-  color: #555;
+  color: #91A1B8;
   line-height: 1.5;
 }
 
@@ -238,15 +240,15 @@ section {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 500px;
-  margin: 20px auto 0;
+  max-width: 70%;
+  margin: 30px auto 0;
 }
 .contact input,
 .contact textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #000000;
+  border-radius: 7px;
   font-size: 1rem;
 }
 .contact button {
@@ -273,7 +275,7 @@ section {
     position: absolute;
     top: 70px;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.05);
     width: 200px;
     transform: translateX(100%);
     transition: transform 0.3s ease;
