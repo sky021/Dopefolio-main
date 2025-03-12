@@ -17,6 +17,12 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Temporary debugging rule: force AOS elements visible */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* Container */
 .container {
   width: min(90%, 1200px);
@@ -265,7 +271,7 @@ section h2 {
   width: 70%;
   display: block;
   margin: 0 auto;
-  loading: lazy;
+  /* 'loading' attribute is handled in HTML */
 }
 .project h3 {
   margin: 15px;
@@ -352,7 +358,7 @@ section h2 {
     display: block;
   }
 }
-  
+
 /* Dark Mode Styles */
 body.dark-mode {
   color: #f1f1f1;

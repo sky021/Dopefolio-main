@@ -37,7 +37,6 @@
 //   }
 // });
 
-
 document.addEventListener("DOMContentLoaded", function() {
   // Initialize AOS for scroll animations
   AOS.init({
@@ -67,11 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
   themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     // Change the icon based on current mode
-    if(document.body.classList.contains('dark-mode')){
-      themeToggle.textContent = "☀️";
-    } else {
-      themeToggle.textContent = "🌙";
-    }
+    themeToggle.textContent = document.body.classList.contains('dark-mode') ? "☀️" : "🌙";
   });
   
   // EmailJS Integration for Contact Form (replace YOUR_PUBLIC_KEY, YOUR_SERVICE_ID, and YOUR_TEMPLATE_ID with actual values)
