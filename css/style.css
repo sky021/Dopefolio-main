@@ -136,7 +136,7 @@ section {
   padding: 10px 15px;
   border-radius: 20px;  
   font-size: 0.9rem;
-  color: #EBF8FF;
+  color: #F9F1F1;
 }
 
 /* EXPERIENCE SECTION - Timeline */
@@ -194,7 +194,7 @@ section {
 .timeline-content h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #EBF8FF;
+  color: #F9F1F1;
 }
 .timeline-content .date {
   font-size: 0.9rem;
@@ -209,7 +209,7 @@ section {
   gap: 30px;
 }
 .project {
-  background: #BAD7E7;
+  background: #F9F1F1;
   width: 400px;
   border-radius: 8px;
   overflow: hidden;
@@ -231,7 +231,7 @@ section {
 .project p {
   margin: 0 15px 15px;
   font-size: 0.95rem;
-  color: #91A1B8;
+  color: #30364B;
   line-height: 1.5;
 }
 
@@ -246,7 +246,7 @@ section {
 .contact input,
 .contact textarea {
   width: 100%;
-  padding: 12px;
+  padding: 5px;
   border: 2px solid #000000;
   border-radius: 7px;
   font-size: 1rem;
