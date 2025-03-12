@@ -226,73 +226,100 @@
 </body>
 </html> -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Agrawal - Portfolio</title>
-    <meta name="description" content="Akash Agrawal's Portfolio - Software Engineer | Machine Learning Engineer | Data Scientist">
-    
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <script defer src="index.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash Agrawal - Portfolio</title>
+  <meta name="description" content="Akash Agrawal's Portfolio - Software Engineer | Machine Learning Engineer | Data Scientist" />
+  
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo">Akash Agrawal</div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="menu-icon">&#9776;</div>
-    </header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Akash Agrawal</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-icon">&#9776;</div>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Akash Agrawal</h1>
-            <p>Software Engineer | Machine Learning Engineer | Data Scientist</p>
-            <a href="#projects" class="btn">View Projects</a>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Akash Agrawal</h1>
+      <p>Software Engineer | Machine Learning Engineer | Data Scientist</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer with expertise in AI, cloud computing, and data science. 
+        My mission is to create innovative solutions that drive business impact and make a 
+        positive difference in the world.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="images/placeholder1.jpg" alt="Project 1" />
+          <h3>Project 1</h3>
+          <p>AI-powered image recognition system that accurately identifies objects in real-time.</p>
         </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate developer with expertise in AI, cloud computing, and data science...</p>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>AI-powered image recognition system...</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Developed a spam filter using NLP...</p>
-            </div>
+        <div class="project">
+          <img src="images/placeholder1.jpg" alt="Project 2" />
+          <h3>Project 2</h3>
+          <p>Spam filter developed using advanced NLP techniques to classify messages with high precision.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Akash Agrawal | All Rights Reserved</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Akash Agrawal | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
-
