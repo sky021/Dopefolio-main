@@ -116,8 +116,10 @@ body {
 .about {
   padding: 100px 0;
   text-align: center;
-  background: url('about.jpg') no-repeat center center;
-  background-size: cover;
+  background-image: url('about.jpg'); /* Ensure the path is correct and relative to your CSS file */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Ensure the image covers the entire section */
 }
 
 .about h2 {
