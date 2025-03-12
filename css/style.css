@@ -10,6 +10,12 @@ body {
   color: #333;
   background: #f2f2f2;
   overflow-x: hidden;
+  background-image: url('cloud-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll; /* This is the default, but you can specify it explicitly */
+  
 }
 
 /* UTILITY CLASSES */
