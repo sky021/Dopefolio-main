@@ -120,6 +120,7 @@ section {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+  background: rgba(235, 248, 255, 0.35);
 }
 
 /* SKILLS SECTION */
