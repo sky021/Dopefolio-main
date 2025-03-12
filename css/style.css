@@ -11,7 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   /* Full background image across the site */
-  background: url('cloud-background.jpg') no-repeat center center fixed;
+  background: url('cloudBackground.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
 }
