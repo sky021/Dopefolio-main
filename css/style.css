@@ -135,28 +135,24 @@ body {
 /* SKILLS SECTION */
 .skills {
   padding: 100px 0;
-  background: #f8f8f8;
-  text-align: center;
 }
 
 .skills h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.skills-list {
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 15px;
 }
 
-.skills-list li {
-  background: #fff;
+.skills-grid span {
+  background-color: #f8f9fa;
+  border-radius: 20px;
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  font-size: .9rem;
 }
 
 /* EXPERIENCE SECTION */
