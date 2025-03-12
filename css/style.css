@@ -79,7 +79,7 @@ body {
   text-align: center;
   padding-top: 70px; /* to offset fixed header */
   position: relative;
-  color: #30364B;
+  /* color: #30364B; */
 }
 
 .hero::before {
