@@ -228,18 +228,14 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akash Agrawal - Portfolio</title>
   <meta name="description" content="Akash Agrawal's Portfolio - Software Engineer | Machine Learning Engineer | Data Scientist" />
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- HEADER -->
@@ -248,6 +244,7 @@
       <div class="logo">Akash Agrawal</div>
       <nav class="nav">
         <ul>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -260,7 +257,7 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
       <h1>Akash Agrawal</h1>
       <p>Software Engineer | Machine Learning Engineer | Data Scientist</p>
@@ -272,7 +269,10 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>I'm a passionate developer with expertise in AI, cloud computing, and data science. My mission is to create innovative solutions that drive business impact and make a positive difference in the world.</p>
+      <p>
+        I'm a passionate developer with expertise in AI, cloud computing, and data science.
+        My mission is to create innovative solutions that drive business impact and make a positive difference in the world.
+      </p>
     </div>
   </section>
 
@@ -281,8 +281,22 @@
     <div class="container">
       <h2>My Skills</h2>
       <ul class="skills-grid">
-        <!-- Skills List -->
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>Python</li><li>Django</li><li>SQL</li><li>AWS</li><li>Docker</li><li>Kubernetes</li><li>GitHub</li><li>Pandas</li><li>Numpy</li><li>Terraform</li><li>CloudFormation</li><!-- Add more skills as needed -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>SQL</li>
+        <li>AWS</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>GitHub</li>
+        <li>Pandas</li>
+        <li>Numpy</li>
+        <li>Terraform</li>
+        <li>CloudFormation</li>
       </ul>
     </div>
   </section>
@@ -291,76 +305,46 @@
   <section id="experience" class="experience">
     <div class="container">
       <h2>My Experience</h2>
-      <!-- Timeline Structure -->
       <div class="timeline">
-        <!-- Example Experience Entry -->
         <div class="timeline-item">
-          <div class="timeline-icon">&#127891;</div><!-- Graduation Icon -->
+          <div class="timeline-icon">&#127891;</div>
           <div class="timeline-content">
             <h3>M.S. in Computer Science - ASU</h3>
-            <p>Pursuing a Master's in Computer Science with a focus on distributed systems and machine learning. GPA: 3.94/4.</p>
-            <small>Jan 2024 - Dec 2025 (Expected)</small>
+            <p>
+              Pursuing a Master's in Computer Science with a focus on distributed systems and machine learning.
+              GPA: 3.94/4.
+            </p>
+            <span class="date">Jan 2024 - Dec 2025 (Expected)</span>
           </div>
         </div>
-
-        <!-- Another Example Entry -->
         <div class="timeline-item">
-          <div class="timeline-icon">&#128188;</div><!-- Work Icon -->
+          <div class="timeline-icon">&#128188;</div>
           <div class="timeline-content">
             <h3>Software Developer - RaftLabs</h3>
-            <p>Designed scalable distributed systems for real-time data ingestion and API integrations, optimizing caching strategies to enhance system reliability.</p>
-            <small>Jan 2023 - Nov 2023</small>
+            <p>
+              Designed scalable distributed systems for real-time data ingestion and API integrations,
+              optimizing caching strategies to enhance system reliability.
+            </p>
+            <span class="date">Jan 2023 - Nov 2023</span>
           </div>
         </div>
-
-        <!-- Add more timeline items as needed -->
       </div>
     </div>
   </section>
-
-  <!-- EXPERIENCE SECTION
-  <section id="experience" class="experience">
-    <div class="container">
-      <h2>My Experience</h2>
-      <!-- Timeline Structure -->
-      <!-- <div class="timeline">
-        <!-- Example Experience Entry -->
-        <!-- <div class="timeline-item">
-          <div class="timeline-icon">&#127891;</div><!-- Graduation Icon -->
-          <!-- <div class="timeline-content">
-            <h3>M.S. in Computer Science - ASU</h3>
-            <p>Pursuing a Master's in Computer Science with a focus on distributed systems and machine learning. GPA: 3.94/4.</p>
-            <small>Jan 2024 - Dec 2025 (Expected)</small>
-          </div>
-        </div> --> --> -->
-
-        <!-- Another Example Entry -->
-        <!-- <div class="timeline-item">
-          <div class="timeline-icon">&#128188;</div><!-- Work Icon -->
-          <!-- <div class="timeline-content">
-            <h3>Software Developer - RaftLabs</h3>
-            <p>Designed scalable distributed systems for real-time data ingestion and API integrations, optimizing caching strategies to enhance system reliability.</p>
-            <small>Jan 2023 - Nov 2023</small>
-          </div>
-        </div> --> -->
-
-        <!-- Add more timeline items as needed -->
-      <!-- </div>
-    </div>
-  </section> --> -->
 
   <!-- PROJECTS SECTION -->
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-list">
-        <!-- Example Projects -->
         <div class="project">
           <img src="images/placeholder1.jpg" alt="Project 1" />
           <h3>Project 1</h3>
-          <p>An AI-powered image recognition system that accurately identifies objects in real-time.</p>
+          <p>
+            An AI-powered image recognition system that accurately identifies objects in real-time.
+          </p>
         </div>
-        <!-- Add more projects as needed -->
+        <!-- Additional project cards can be added here -->
       </div>
     </div>
   </section>
@@ -368,9 +352,8 @@
   <!-- CONTACT SECTION -->
   <section id="contact" class="contact">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>Contact Me</h2>
       <form id="contact-form">
-        <!-- Contact Form Fields -->
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
@@ -379,8 +362,7 @@
     </div>
   </section>
 
-<!-- JavaScript -->
-<script src="./script.js"></script>
-
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
 </body>
 </html>
