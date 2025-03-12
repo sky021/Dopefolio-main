@@ -14,6 +14,7 @@ body {
   background: url('cloudBackground.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Container */
@@ -63,8 +64,20 @@ body {
   font-size: 1.8rem;
   cursor: pointer;
 }
+/* Dark/Light mode toggle button */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
 
-/* HERO SECTION (Full viewport without overlay) */
+/* HERO SECTION (Full viewport, no overlay) */
 .hero {
   display: flex;
   align-items: center;
@@ -103,7 +116,7 @@ body {
 
 /* Base styles for all sections except the hero */
 section:not(.hero) {
-  min-height: 100vh;           /* Each section fills the viewport height */
+  min-height: 100vh;                    /* Full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,21 +138,46 @@ section h2 {
   padding: 0 20px;
 }
 
-/* SKILLS SECTION */
+/* SKILLS SECTION with Progress Bars */
 .skills .skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  list-style: none;
+  gap: 20px;
   padding: 10px;
 }
-.skills .skills-grid li {
-  background: #30364B;
+.skill {
+  background: #fff;
+  border-radius: 8px;
   padding: 10px 15px;
+  width: 250px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.skill:hover {
+  transform: translateY(-3px);
+}
+.skill .skill-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+.progress-bar {
+  background: #e0e0e0;
   border-radius: 20px;
-  font-size: 0.9rem;
-  color: #F9F1F1;
+  overflow: hidden;
+  height: 10px;
+}
+.progress {
+  background: #30364B;
+  height: 100%;
+  line-height: 10px;
+  color: #fff;
+  text-align: right;
+  padding-right: 5px;
+  border-radius: 20px;
+  transition: width 1s ease;
 }
 
 /* EXPERIENCE SECTION - Timeline */
@@ -166,6 +204,7 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+  color: #F9F1F1;
 }
 .timeline-item:nth-child(odd) {
   left: 0;
@@ -226,6 +265,7 @@ section h2 {
   width: 70%;
   display: block;
   margin: 0 auto;
+  loading: lazy;
 }
 .project h3 {
   margin: 15px;
@@ -259,6 +299,27 @@ section h2 {
   align-self: flex-end;
 }
 
+/* FOOTER */
+.footer {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 20px 0;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.footer .social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #30364B;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.footer .social-links a:hover {
+  color: #007bff;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   /* Adjust timeline for smaller screens */
@@ -279,7 +340,7 @@ section h2 {
     position: absolute;
     top: 70px;
     right: 0;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.65);
     width: 200px;
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -290,4 +351,68 @@ section h2 {
   .menu-icon {
     display: block;
   }
+}
+  
+/* Dark Mode Styles */
+body.dark-mode {
+  color: #f1f1f1;
+}
+body.dark-mode .header {
+  background: rgba(0, 0, 0, 0.65);
+}
+body.dark-mode .logo,
+body.dark-mode .nav a,
+body.dark-mode .menu-icon {
+  color: #fff;
+}
+body.dark-mode .nav a:hover {
+  color: #007bff;
+}
+body.dark-mode section:not(.hero) {
+  background: rgba(0, 0, 0, 0.35);
+}
+body.dark-mode .hero-content {
+  color: #fff;
+}
+body.dark-mode .btn {
+  background: #fff;
+  color: #30364B;
+}
+body.dark-mode .btn:hover {
+  background: #ddd;
+}
+body.dark-mode .timeline::before {
+  background: #fff;
+}
+body.dark-mode .timeline-item {
+  background: #222;
+}
+body.dark-mode .timeline-item::after {
+  box-shadow: 0 0 0 4px #222;
+}
+body.dark-mode .timeline-content h3,
+body.dark-mode .timeline-content .date {
+  color: #fff;
+}
+body.dark-mode .project {
+  background: #222;
+}
+body.dark-mode .project h3,
+body.dark-mode .project p {
+  color: #fff;
+}
+body.dark-mode .contact input,
+body.dark-mode .contact textarea {
+  border: 2px solid #fff;
+  background: #333;
+  color: #fff;
+}
+body.dark-mode .footer {
+  background: rgba(0, 0, 0, 0.65);
+}
+body.dark-mode .footer .social-links a {
+  color: #fff;
+}
+body.dark-mode .footer .social-links a:hover {
+  color: #007bff;
 }
