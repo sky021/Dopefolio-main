@@ -91,7 +91,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid #30364B;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -124,14 +124,14 @@ section:not(.hero) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.35); /* Light transparent overlay */
+  background: rgba(201, 222, 255, 0.55); /* Light transparent overlay */
   padding: 40px 0;
 }
 
 /* Increase spacing after section headings */
 section h2 {
   margin-bottom: 40px;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 /* ABOUT SECTION */
@@ -140,6 +140,8 @@ section h2 {
   margin: 0 auto;
   line-height: 1.6;
   padding: 0 20px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 /* SKILLS SECTION */
@@ -179,8 +181,8 @@ section h2 {
   position: relative;
   width: 45%;
   padding: 20px;
-  background: #30364B;
-  border-radius: 8px;
+  background: #BCD5E7;
+  border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
@@ -196,9 +198,9 @@ section h2 {
   top: 20px;
   width: 20px;
   height: 20px;
-  background: #EBF8FF;
+  background: #30364B;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid #BCD5E7;
   box-shadow: 0 0 0 4px #30364B;
 }
 .timeline-item:nth-child(odd)::after {
@@ -212,13 +214,18 @@ section h2 {
   margin-bottom: 10px;
 }
 .timeline-content h3 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 8px;
-  color: #F9F1F1;
+  color: #30364B;
+}
+.timeline-content p {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #30364B;
 }
 .timeline-content .date {
-  font-size: 0.9rem;
-  color: #F9F1F1;
+  font-size: 1rem;
+  color: #30364B;
 }
 
 /* PROJECTS SECTION */
@@ -278,13 +285,13 @@ section h2 {
 
 /* Footer */
 .footer {
-  padding: 40px;
+  padding: 100px;
   text-align: center;
 }
 .social-links a {
   display: block;
-  font-size: 1.2rem;
-  margin: 10px;
+  font-size: 1.5rem;
+  margin: 50px;
 }
 
 
