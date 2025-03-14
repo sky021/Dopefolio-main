@@ -38,12 +38,7 @@
 // });
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Initialize AOS for scroll animations
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true
-  });
+  AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
 
   // Mobile Menu Toggle
   const menuIcon = document.querySelector('.menu-icon');
@@ -51,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function() {
   menuIcon.addEventListener('click', () => {
     navList.classList.toggle('active');
   });
-  
-  // Close mobile menu when a navigation link is clicked
+
+  // Close mobile menu when clicking a link
   document.querySelectorAll('.nav a').forEach(link => {
     link.addEventListener('click', () => {
       if (navList.classList.contains('active')) {
@@ -60,32 +55,25 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
-  
-  // Dark/Light Mode Toggle
+
+  // Dark Mode Toggle
   const themeToggle = document.querySelector('.theme-toggle');
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeToggle.textContent = "☀️";
+  }
   themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-    // Change the icon based on current mode
-    themeToggle.textContent = document.body.classList.contains('dark-mode') ? "☀️" : "🌙";
+    const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', mode);
+    themeToggle.textContent = mode === 'dark' ? "☀️" : "🌙";
   });
-  
-  // EmailJS Integration for Contact Form (replace YOUR_PUBLIC_KEY, YOUR_SERVICE_ID, and YOUR_TEMPLATE_ID with actual values)
-  const contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-      
-      // Initialize EmailJS (ensure you have included the EmailJS SDK in your project)
-      emailjs.init('YOUR_PUBLIC_KEY');
-      
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-        .then(() => {
-          alert('Message sent successfully!');
-          contactForm.reset();
-        }, (error) => {
-          alert('Failed to send message. Please try again.');
-          console.error('EmailJS error:', error);
-        });
-    });
-  }
+
+  // Opacity Transition Effect
+  const sections = document.querySelectorAll("section");
+  let opacity = 0.3;
+  sections.forEach((section, index) => {
+    section.style.background = `rgba(255, 255, 255, ${opacity})`;
+    opacity += 0.1;
+  });
 });
