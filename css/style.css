@@ -124,7 +124,7 @@ section:not(.hero) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(201, 222, 255, 0.55); /* Light transparent overlay */
+  background: rgba(249, 241, 241, 0.55); /* Light transparent overlay */
   padding: 40px 0;
 }
 
