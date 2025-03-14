@@ -230,13 +230,12 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akash Agrawal - Portfolio</title>
-  <meta name="description" content="Akash Agrawal's Portfolio - Software Engineer | Machine Learning Engineer | Data Scientist">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Akash Agrawal's Portfolio - Software Engineer | Machine Learning Engineer | Data Scientist" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- HEADER -->
@@ -250,109 +249,120 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#fun">Fun</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button class="theme-toggle">🌙</button>
       <div class="menu-icon">&#9776;</div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="home" class="hero" data-aos="fade">
-    <div class="hero-content" data-aos="fade-up">
-      <img src="images/placeholder-profile.jpg" alt="Profile Picture" class="hero-image">
+  <!-- HERO SECTION (Full viewport, no overlay) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
       <h1>Akash Agrawal</h1>
       <p>Software Engineer | Machine Learning Engineer | Data Scientist</p>
       <a href="#projects" class="btn">View Projects</a>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about" data-aos="fade">
+  <!-- ABOUT SECTION (Full viewport with light overlay) -->
+  <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Passionate about solving complex problems using AI and software engineering. I strive to create impactful solutions that drive innovation.</p>
+      <p>
+        I'm a passionate developer with expertise in AI, cloud computing, and data science.
+        My mission is to create innovative solutions that drive business impact and make a positive difference in the world.
+      </p>
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills" data-aos="fade">
+  <!-- SKILLS SECTION (Full viewport with light overlay) -->
+  <section id="skills" class="skills">
     <div class="container">
       <h2>My Skills</h2>
-      <ul class="skills-list">
-        <li>Java</li>
+      <ul class="skills-grid">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
         <li>Python</li>
-        <li>C++</li>
-        <li>Machine Learning</li>
-        <li>Data Science</li>
-        <li>REST API Development</li>
+        <li>Django</li>
+        <li>SQL</li>
+        <li>AWS</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>GitHub</li>
+        <li>Pandas</li>
+        <li>Numpy</li>
+        <li>Terraform</li>
+        <li>CloudFormation</li>
       </ul>
     </div>
   </section>
 
-  <!-- EXPERIENCE SECTION -->
-  <section id="experience" class="experience" data-aos="fade">
+  <!-- EXPERIENCE SECTION (Full viewport with light overlay) -->
+  <section id="experience" class="experience">
     <div class="container">
       <h2>My Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
-          <h3>Data Science Research Assistant - ASU</h3>
-          <p>Developed deep learning models for particle tracking, achieving 94% accuracy.</p>
-          <span class="date">Aug 2024 - Present</span>
+          <div class="timeline-icon">&#127891;</div>
+          <div class="timeline-content">
+            <h3>M.S. in Computer Science - ASU</h3>
+            <p>
+              Pursuing a Master's in Computer Science with a focus on distributed systems and machine learning.
+              GPA: 3.94/4.
+            </p>
+            <span class="date">Jan 2024 - Dec 2025 (Expected)</span>
+          </div>
         </div>
         <div class="timeline-item">
-          <h3>Software Engineer - Ltimindtree</h3>
-          <p>Led a team in migrating 1M+ customer records, optimized SQL tables improving execution by 42%.</p>
-          <span class="date">Aug 2021 - Nov 2023</span>
+          <div class="timeline-icon">&#128188;</div>
+          <div class="timeline-content">
+            <h3>Software Developer - RaftLabs</h3>
+            <p>
+              Designed scalable distributed systems for real-time data ingestion and API integrations,
+              optimizing caching strategies to enhance system reliability.
+            </p>
+            <span class="date">Jan 2023 - Nov 2023</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="projects" data-aos="fade">
+  <!-- PROJECTS SECTION (Full viewport with light overlay) -->
+  <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-list">
         <div class="project">
-          <a href="https://github.com/sky021/image-recognition" target="_blank">
-            <h3>Image Recognition as a Service</h3>
-            <p>Designed a scalable image recognition system using AWS and Flask. <strong>Skills: Python, AWS, Flask</strong></p>
-          </a>
+          <img src="images/placeholder1.jpg" alt="Project 1" />
+          <h3>Project 1</h3>
+          <p>
+            An AI-powered image recognition system that accurately identifies objects in real-time.
+          </p>
         </div>
+        <!-- Additional project cards can be added here -->
       </div>
     </div>
   </section>
 
-  <!-- FUN SECTION -->
-  <section id="fun" class="fun" data-aos="fade">
-    <div class="container">
-      <h2>Beyond Code</h2>
-      <p>Hiking, AI research, and volunteering at non-profits to teach programming.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact" data-aos="fade">
+  <!-- CONTACT SECTION (Full viewport with light overlay) -->
+  <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Email: agrawal.akash@asu.edu</p>
-      <p>Phone: 480-589-7445</p>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Akash Agrawal</p>
-    <div class="social-links">
-      <a href="https://linkedin.com/in/akashagrawal021" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/sky021" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Link to external JS -->
   <script src="script.js"></script>
 </body>
 </html>
