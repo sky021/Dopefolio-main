@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Opacity Transition Effect
   const sections = document.querySelectorAll("section");
-  let opacity = 0.3;
+  let opacity = 0.4;
   sections.forEach((section, index) => {
     section.style.background = `rgba(255, 255, 255, ${opacity})`;
     opacity += 0.1;

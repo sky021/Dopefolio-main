@@ -22,15 +22,21 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  padding: 0 20px;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #30364B;
 }
 .nav ul {
   list-style: none;
@@ -39,7 +45,7 @@ body {
 }
 .nav a {
   text-decoration: none;
-  color: #333;
+  color: #30364B;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -62,12 +68,15 @@ body {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 3px solid #30364B;
 }
 .hero-content h1 {
   font-size: 3rem;
+  color: #30364B;
 }
 .hero-content p {
   font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 .btn {
   background: #30364B;
@@ -89,12 +98,14 @@ body {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  padding: 20px;
 }
 .skills-list li {
   background: #30364B;
   color: white;
   padding: 8px 15px;
   border-radius: 5px;
+  list-style: none;
 }
 
 /* Experience Section */
@@ -108,11 +119,19 @@ body {
 .project a {
   text-decoration: none;
   color: inherit;
+  display: block;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+.project a:hover {
+  background: #f4f4f4;
 }
 
 /* Fun Section */
 .fun {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   padding: 50px;
   text-align: center;
 }
@@ -121,9 +140,50 @@ body {
 .footer {
   padding: 40px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.9);
 }
 .social-links a {
-  display: block;
+  display: inline-block;
   font-size: 1.2rem;
   margin: 10px;
+  text-decoration: none;
+  color: #30364B;
+}
+.social-links a:hover {
+  color: #007bff;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+body.dark-mode .header {
+  background: rgba(0, 0, 0, 0.8);
+}
+body.dark-mode .logo, 
+body.dark-mode .nav a {
+  color: #ffffff;
+}
+body.dark-mode .nav a:hover {
+  color: #007bff;
+}
+body.dark-mode .hero-content h1 {
+  color: #ffffff;
+}
+body.dark-mode .btn {
+  background: #ffffff;
+  color: #30364B;
+}
+body.dark-mode .btn:hover {
+  background: #ddd;
+}
+body.dark-mode .footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+body.dark-mode .social-links a {
+  color: #ffffff;
+}
+body.dark-mode .social-links a:hover {
+  color: #007bff;
 }
