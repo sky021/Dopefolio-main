@@ -73,7 +73,7 @@ body {
   text-align: center;
   padding-top: 70px; /* Offset for fixed header */
   position: relative;
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.20); /* HERO-specific background */
 }
 .hero-content {
   position: relative;
@@ -119,33 +119,32 @@ body {
   background: #0056b3;
 }
 
-/* Base styles for all sections except the hero */
-section:not(.hero) {
-  min-height: 100vh;                   /* Each section fills the viewport */
+/* ABOUT SECTION */
+.about {
+  min-height: 100vh;  /* Fills viewport */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.40); /* Light transparent overlay */
+  background: rgba(255, 255, 255, 0.30); /* About section background */
   padding: 40px 0;
 }
-
-/* Increase spacing after section headings */
-section h2 {
-  margin-bottom: 40px;
-  font-size: 3rem;
-}
-
-/* ABOUT SECTION */
 .about p {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   line-height: 1.6;
   padding: 0 20px;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
 }
 
 /* SKILLS SECTION */
+.skills {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(240, 240, 240, 0.40); /* Skills section background */
+  padding: 40px 0;
+}
 .skills .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +161,15 @@ section h2 {
   color: #F9F1F1;
 }
 
-/* EXPERIENCE SECTION - Timeline */
+/* EXPERIENCE SECTION */
+.experience {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.50); /* Experience section background */
+  padding: 40px 0;
+}
 .timeline {
   position: relative;
   margin: 50px 0;
@@ -230,6 +237,14 @@ section h2 {
 }
 
 /* PROJECTS SECTION */
+.projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(245, 245, 245, 0.60); /* Projects section background */
+  padding: 40px 0;
+}
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -265,6 +280,14 @@ section h2 {
 }
 
 /* CONTACT SECTION */
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.70); /* Contact section background */
+  padding: 40px 0;
+}
 .contact form {
   display: flex;
   flex-direction: column;
@@ -284,10 +307,11 @@ section h2 {
   align-self: flex-end;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   padding: 100px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.80); /* Footer background */
 }
 .social-links a {
   display: block;
@@ -295,6 +319,11 @@ section h2 {
   margin: 50px;
 }
 
+/* Increase spacing after section headings */
+section h2 {
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
