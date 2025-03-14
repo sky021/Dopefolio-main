@@ -91,7 +91,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 4px solid #30364B;
+  border: 4px solid #fff;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -124,7 +124,7 @@ section:not(.hero) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(249, 241, 241, 0.55); /* Light transparent overlay */
+  background: rgba(255, 255, 255, 0.40); /* Light transparent overlay */
   padding: 40px 0;
 }
 
