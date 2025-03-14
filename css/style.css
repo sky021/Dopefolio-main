@@ -95,21 +95,6 @@ body {
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-.waving-hand {
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  font-size: 2rem;
-  animation: wave 2s infinite;
-}
-@keyframes wave {
-  0% { transform: rotate(0deg); }
-  20% { transform: rotate(14deg); }
-  40% { transform: rotate(-8deg); }
-  60% { transform: rotate(14deg); }
-  80% { transform: rotate(-4deg); }
-  100% { transform: rotate(0deg); }
-}
 
 .hero-content h1 {
   font-size: 3rem;
