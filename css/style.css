@@ -98,11 +98,11 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 .btn {
@@ -133,7 +133,7 @@ body {
   margin: 0 auto 2rem;
   line-height: 1.6;
   padding: 0 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* SKILLS SECTION */
