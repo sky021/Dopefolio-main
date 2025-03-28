@@ -128,9 +128,6 @@ body {
   background: rgba(255, 255, 255, 0.30); /* About section background */
   padding: 40px 0;
 }
-.about h2 {
-  text-align: center;
-}  
 
 .about p {
   max-width: 800px;
@@ -149,9 +146,7 @@ body {
   background: rgba(240, 240, 240, 0.40); /* Skills section background */
   padding: 40px 0;
 }
-.skills h2 {
-  text-align: center;
-}  
+
 .skills .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +175,6 @@ body {
 .experience h2 {
   margin-bottom: 40px;
   font-size: 3rem;
-  text-align: center;
 }
 
 /* The main list wrapper */
@@ -306,13 +300,13 @@ body {
   color: #30364B;
 } */
 
-/* PROJECTS SECTION */
+ /* PROJECTS SECTION
 .projects {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(245, 245, 245, 0.60); /* Projects section background */
+  background: rgba(245, 245, 245, 0.60); 
   padding: 40px 0;
 }
 .project-list {
@@ -328,9 +322,6 @@ body {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-}
-.project h2{
- text-align: center; 
 }
 .project:hover {
   transform: translateY(-5px);
@@ -350,7 +341,134 @@ body {
   font-size: 0.95rem;
   color: #30364B;
   line-height: 1.5;
+} */
+
+/* PROJECTS SECTION */
+.projects {
+  padding: 60px 0;
+  background-color: #F3F4F6; /* Light gray background (like the screenshot) */
 }
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #30364B;
+}
+
+/* Main project card container */
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* Image section on the left */
+.project-card-image {
+  flex: 0 0 40%; /* 40% width for the image on larger screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E5E7EB; /* Subtle background behind the image */
+}
+
+.project-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Right side content */
+.project-card-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header row with title & GitHub link */
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Project title */
+.project-card-header h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #30364B;
+}
+
+/* GitHub icon (top-right corner) */
+.github-icon {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #000;
+  transition: transform 0.2s;
+}
+.github-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Project description */
+.project-card-description {
+  font-size: 1rem;
+  color: #30364B;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Tech tags/pills */
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-card-tags span {
+  background-color: #E5E7EB; /* Light gray pill background */
+  color: #30364B;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Hover effect for the entire card */
+.project-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .project-card-image,
+  .project-card-content {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .project-card-image {
+    min-height: 200px; /* Ensure some consistent height for the image area */
+  }
+  .project-card-header h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
 
 /* CONTACT SECTION */
 .contact {
@@ -360,9 +478,6 @@ body {
   justify-content: center;
   background: rgba(255, 255, 255, 0.70); /* Contact section background */
   padding: 40px 0;
-}
-.contact h2 {
-  text-align: center;
 }
 .contact form {
   display: flex;
@@ -399,37 +514,5 @@ body {
 section h2 {
   margin-bottom: 40px;
   font-size: 3rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  /* Adjust timeline for smaller screens */
-  .timeline::before {
-    left: 8px;
-  }
-  .timeline-item {
-    width: 90%;
-    margin-left: 20px;
-    left: 0 !important;
-  }
-  .timeline-item::after {
-    left: -30px;
-  }
-  /* Mobile navigation */
-  .nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: rgba(255, 255, 255, 0.05);
-    width: 200px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-  }
-  .nav ul.active {
-    transform: translateX(0);
-  }
-  .menu-icon {
-    display: block;
-  }
+  text-align: center;
 }
