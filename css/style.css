@@ -161,13 +161,76 @@ body {
   color: #F9F1F1;
 }
 
-/* EXPERIENCE SECTION */
 .experience {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: rgba(255, 255, 255, 0.50); /* Experience section background */
+  padding: 40px 0;
+}
+
+.experience h2 {
+  margin-bottom: 40px;
+  font-size: 3rem;
+  text-align: left; /* Or center, based on your preference */
+}
+
+/* The main list wrapper */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* spacing between each experience/education item */
+}
+
+/* Individual experience/education item */
+.experience-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px; /* space between the year and details */
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+/* Year styling */
+.experience-item .year {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #30364B;
+  min-width: 80px;
+  text-align: left; 
+}
+
+/* Right side details */
+.experience-item .details h3 {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+  color: #30364B;
+}
+
+.experience-item .details h4 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase; /* to match the screenshot style if desired */
+}
+
+.experience-item .details p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #30364B;
+}
+
+/* EXPERIENCE SECTION
+.experience {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.50); 
   padding: 40px 0;
 }
 .timeline {
@@ -234,7 +297,7 @@ body {
 .timeline-content .date {
   font-size: 1rem;
   color: #30364B;
-}
+} */
 
 /* PROJECTS SECTION */
 .projects {
