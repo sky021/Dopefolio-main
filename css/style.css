@@ -98,11 +98,11 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 .hero-content p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 .btn {
@@ -152,7 +152,7 @@ body {
   margin: 0 auto 2rem;        /* Auto horizontal margins for centering */
   line-height: 1.6;
   padding: 0 5%;              /* Percentage-based horizontal padding */
-  font-size: clamp(1rem, 2vw, 1.2rem); /* Fluid typography */
+  font-size: clamp(1rem, 2vw, 1.5rem); /* Fluid typography */
 }
 
 @media (max-width: 768px) {
@@ -232,7 +232,7 @@ body {
 /* Right side details */
 .experience-item .details h3 {
   margin: 0 0 5px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #30364B;
 }
 
@@ -247,7 +247,7 @@ body {
 .experience-item .details p {
   margin: 0;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #30364B;
 }
 
@@ -482,16 +482,78 @@ body {
   align-self: flex-end;
 }
 
-/* FOOTER */
+/* FOOTER
 .footer {
   padding: 100px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.80); /* Footer background */
+  background: rgba(255, 255, 255, 0.80);
 }
 .social-links a {
   display: block;
   font-size: 1.5rem;
   margin: 50px;
+} */
+
+/* FOOTER */
+.footer {
+  background-color: #fff;    /* White background, matching the screenshot */
+  color: #000;              /* Black text */
+  padding: 20px 0;          /* Spacing top and bottom */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Centers the footer items horizontally */
+  gap: 20px;                /* Space between each section */
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Brand / Logo */
+.footer-brand h2 {
+  font-size: 2rem;          /* Adjust size to match the screenshot's scale */
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase; /* Optional, if you want SALFORD & CO. in all caps */
+}
+
+/* Address */
+.footer-address p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Contact Info */
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;                 /* Spacing between icon and text */
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+/* Vertical Divider */
+.footer-divider {
+  width: 1px;
+  height: 60px;            /* Height of the line */
+  background-color: #000;   /* Black vertical line */
+}
+
+/* RESPONSIVE FOOTER (mobile screens) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-divider {
+    display: none;          /* Hide vertical lines on smaller screens if desired */
+  }
 }
 
 /* Increase spacing after section headings */
