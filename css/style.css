@@ -119,21 +119,48 @@ body {
   background: #0056b3;
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION
 .about {
-  min-height: 100vh;  /* Fills viewport */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.30); /* About section background */
+  background: rgba(255, 255, 255, 0.30);
   padding: 40px 0;
 }
 
 .about p {
+  max-width: 800px;
   margin: 0 auto 2rem;
   line-height: 1.6;
   padding: 0 20px;
   font-size: 1rem;
+} */
+
+.about {
+  min-height: 100vh;          /* Full viewport height minimum */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* Vertical centering of content */
+  background: rgba(255, 255, 255, 0.30);
+  padding: 40px 0;            /* Vertical padding preserved */
+  box-sizing: border-box;     /* Include padding in height calculation */
+}
+
+.about p {
+  width: 90%;                 /* Uses 90% of parent width (adaptive) */
+  margin: 0 auto 2rem;        /* Auto horizontal margins for centering */
+  line-height: 1.6;
+  padding: 0 5%;              /* Percentage-based horizontal padding */
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Fluid typography */
+}
+
+@media (max-width: 768px) {
+  .about p {
+    width: 100%;             /* Full width on mobile */
+    padding: 0 10px;         /* Smaller padding on mobile */
+    font-size: 1rem;         /* Fixed readable size */
+  }
 }
 
 /* SKILLS SECTION */
