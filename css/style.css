@@ -73,7 +73,7 @@ body {
   text-align: center;
   padding-top: 70px; /* Offset for fixed header */
   position: relative;
-  background: rgba(255, 255, 255, 0.50); /* HERO-specific background */
+  background: rgba(255, 255, 255, 0.80); /* HERO-specific background */
 }
 .hero-content {
   position: relative;
