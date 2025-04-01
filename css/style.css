@@ -144,7 +144,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;    /* Vertical centering of content */
-  background: rgba(235, 248, 255, 0.70);
+  background: rgba(249, 241, 241, 0.70);
   padding: 40px 0;            /* Vertical padding preserved */
   box-sizing: border-box;     /* Include padding in height calculation */
 }
@@ -152,8 +152,7 @@ body {
 .about p {
   width: 100%;                 /* Uses 90% of parent width (adaptive) */
   margin: 0 auto 2rem;        /* Auto horizontal margins for centering */
-  line-height: 1;
-  padding: 0 5%;              /* Percentage-based horizontal padding */
+  line-height: 1;          /* Percentage-based horizontal padding */
   font-size: 1.3rem; /* Fluid typography */
   font-weight: bold;
 }
