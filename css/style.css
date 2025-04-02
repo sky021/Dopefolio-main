@@ -152,7 +152,7 @@ body {
 .about p {
   width: 100%;                 /* Uses 90% of parent width (adaptive) */
   margin: 0 auto 2rem;        /* Auto horizontal margins for centering */
-  line-height: 1.2;          /* Percentage-based horizontal padding */
+  line-height: 1.5;          /* Percentage-based horizontal padding */
   font-size: 1.3rem; /* Fluid typography */
   font-weight: bold;
   padding: 0;
