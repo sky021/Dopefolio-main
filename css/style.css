@@ -144,7 +144,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;    /* Vertical centering of content */
-  background: rgba(249, 241, 241, 0.70);
+  background: rgba(249, 241, 241, 0.60);
   padding: 40px 0;            /* Vertical padding preserved */
   box-sizing: border-box;     /* Include padding in height calculation */
 }
