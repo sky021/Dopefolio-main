@@ -172,7 +172,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(240, 240, 240, 0.40); /* Skills section background */
+  background: rgba(255, 255, 255, 0.70); /* Skills section background */
   padding: 40px 0;
 }
 
@@ -197,7 +197,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.50); /* Experience section background */
+  background: rgba(255, 249, 249, 0.70); /* Experience section background */
   padding: 40px 0;
 }
 
@@ -250,7 +250,8 @@ body {
 .experience-item .details p {
   margin: 0;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #30364B;
 }
 
@@ -350,7 +351,7 @@ body {
   align-items: stretch;
   background-color: #FFFFFF;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.70);
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -463,7 +464,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.70); /* Contact section background */
+  background: rgba(255, 249, 249, 0.70); /* Contact section background */
   padding: 40px 0;
 }
 .contact form {
@@ -479,7 +480,7 @@ body {
   padding: 5px;
   border: 2px solid #000;
   border-radius: 7px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .contact button {
   align-self: flex-end;
