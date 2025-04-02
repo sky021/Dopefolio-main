@@ -40,9 +40,18 @@ body {
   height: 70px;
 }
 .logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333;
+  /* Replace text styling with image constraints */
+  max-width: 180px; /* Adjust based on your logo aspect ratio */
+  height: auto; /* Maintain proportions */
+  display: block; /* Change from default inline behavior */
+  overflow: hidden; /* Safety measure */
+}
+
+/* If using an <img> inside .logo */
+.logo img {
+  width: 100%; /* Make image fill container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent distortion */
 }
 .nav ul {
   list-style: none;
