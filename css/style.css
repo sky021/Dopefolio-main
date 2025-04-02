@@ -512,8 +512,8 @@ body {
 
 /* FOOTER */
 .footer {
-  background-color: #fff;    /* White background, matching the screenshot */
-  color: #000;              /* Black text */
+  background-color: #30364B;    /* White background, matching the screenshot */
+  color: #FFFFFF;              /* Black text */
   padding: 20px 0;          /* Spacing top and bottom */
 }
 
@@ -530,26 +530,11 @@ body {
   align-items: flex-start;
 }
 
-/* Brand / Logo */
-.footer-brand h2 {
-  font-size: 2rem;          /* Adjust size to match the screenshot's scale */
-  font-weight: 700;
-  margin: 0;
-  text-transform: uppercase; /* Optional, if you want SALFORD & CO. in all caps */
-}
-
 /* Address */
-.footer-address p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 0;
-}
-
-/* Contact Info */
+.footer-address p,
 .footer-contact p {
   display: flex;
-  align-items: center;
-  gap: 8px;                 /* Spacing between icon and text */
+  align-items: center;               /* Spacing between icon and text */
   margin: 4px 0;
   font-size: 1rem;
 }
@@ -557,8 +542,8 @@ body {
 /* Vertical Divider */
 .footer-divider {
   width: 1px;
-  height: 60px;            /* Height of the line */
-  background-color: #000;   /* Black vertical line */
+  height: 40px;            /* Height of the line */
+  background-color: #FFFFFF;   /* Black vertical line */
 }
 
 /* RESPONSIVE FOOTER (mobile screens) */
