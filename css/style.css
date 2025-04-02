@@ -333,6 +333,7 @@ body {
 /* PROJECTS SECTION */
 .projects {
   padding: 60px 0;
+  background: rgba(255, 255, 255, 0.70);
 }
 
 .projects h2 {
@@ -478,9 +479,12 @@ body {
   padding: 5px;
   border: 2px solid #000;
   border-radius: 7px;
-  height: 150px;
   font-size: 2rem;
 }
+.contact textarea {
+  height: 150px;
+}
+
 .contact button {
   align-self: flex-end;
 }
