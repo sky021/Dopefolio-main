@@ -175,8 +175,7 @@ body {
   background: rgba(255, 255, 255, 0.70); /* Skills section background */
   padding: 40px 0;
 }
-
-.skills .skills-grid {
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -184,12 +183,12 @@ body {
   list-style: none;
   padding: 10px;
 }
-.skills .skills-grid li {
+.skills-grid li {
   background: #30364B;
   padding: 10px 15px;
   border-radius: 20px;
-  font-size: 0.9rem;
-  color: #F9F1F1;
+  font-size: 1.3rem;
+  color: #FFFFFF;
 }
 
 .experience {
@@ -197,7 +196,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255, 249, 249, 0.70); /* Experience section background */
+  background: rgba(255, 249, 249, 0.80); /* Experience section background */
   padding: 40px 0;
 }
 
@@ -334,7 +333,6 @@ body {
 /* PROJECTS SECTION */
 .projects {
   padding: 60px 0;
-  background-color: #F3F4F6; /* Light gray background (like the screenshot) */
 }
 
 .projects h2 {
@@ -422,8 +420,8 @@ body {
 }
 
 .project-card-tags span {
-  background-color: #E5E7EB; /* Light gray pill background */
-  color: #30364B;
+  background-color: #30364B;
+  color: #FFFFFF;
   padding: 6px 12px;
   border-radius: 15px;
   font-size: 0.9rem;
@@ -480,6 +478,7 @@ body {
   padding: 5px;
   border: 2px solid #000;
   border-radius: 7px;
+  height: 150px;
   font-size: 2rem;
 }
 .contact button {
