@@ -41,7 +41,7 @@ body {
 }
 .logo {
   /* Replace text styling with image constraints */
-  max-width: 180px; /* Adjust based on your logo aspect ratio */
+  max-width: 80px; /* Adjust based on your logo aspect ratio */
   height: auto; /* Maintain proportions */
   display: block; /* Change from default inline behavior */
   overflow: hidden; /* Safety measure */
