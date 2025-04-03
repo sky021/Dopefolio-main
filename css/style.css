@@ -29,7 +29,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: rgba(48, 54, 75, 1);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -60,7 +60,7 @@ body {
 }
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: #30364B;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -513,8 +513,8 @@ body {
 
 /* FOOTER */
 .footer {
-  background-color: #30364B;    /* White background, matching the screenshot */
-  color: #FFFFFF;              /* Black text */
+  background-color: #FFFFFF;    /* White background, matching the screenshot */
+  color: #30364B;              /* Black text */
   padding: 20px 0;          /* Spacing top and bottom */
 }
 
@@ -543,8 +543,8 @@ body {
 /* Vertical Divider */
 .footer-divider {
   width: 1px;
-  height: 40px;            /* Height of the line */
-  background-color: #FFFFFF;   /* Black vertical line */
+  height: 35px;            /* Height of the line */
+  background-color: #30364B;   /* Black vertical line */
 }
 
 /* RESPONSIVE FOOTER (mobile screens) */
