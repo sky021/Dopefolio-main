@@ -564,3 +564,9 @@ section h2 {
   font-size: 3rem;
   text-align: center;
 }
+
+
+/* Global override: make all text bold */
+*, *::before, *::after {
+  font-weight: bold !important;
+}
