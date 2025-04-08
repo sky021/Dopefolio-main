@@ -452,17 +452,6 @@ p {
   font-size: 1.2rem;
 }
 
-.footer-social a {
-  font-size: 1.6rem;
-  color: #30364B;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer-social a:hover {
-  color: #0077b5;
-  transform: scale(1.2);
-}
-
 .footer-divider {
   width: 1px;
   height: 30px;
