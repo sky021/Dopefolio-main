@@ -352,6 +352,17 @@ p {
 .github-icon:hover {
   transform: scale(1.1);
 }
+.publication-icon {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #30364B;
+  margin-left: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.publication-icon:hover {
+  color: #007bff; /* Optional: change to your preferred accent */
+  transform: scale(1.2);
+}
 .project-card-description {
   font-size: 1rem;
   color: #30364B;
@@ -469,8 +480,8 @@ p {
 }
 
 section h2 {
-  margin-top: 75px;
-  margin-bottom: 70px;
+  margin-top: 65px;
+  margin-bottom: 50px;
   font-size: 3rem;
   text-align: center;
 }
