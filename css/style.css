@@ -352,7 +352,7 @@ p {
 .github-icon:hover {
   transform: scale(1.1);
 }
-.publication-icon {
+/* .publication-icon {
   text-decoration: none;
   font-size: 1.6rem;
   color: #30364B;
@@ -361,7 +361,7 @@ p {
 .publication-icon:hover {
   color: #007bff; /* Optional: change to your preferred accent */
   transform: scale(1.2);
-}
+} */
 .project-card-description {
   font-size: 1rem;
   color: #30364B;
