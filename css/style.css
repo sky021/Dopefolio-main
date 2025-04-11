@@ -290,7 +290,6 @@ p {
 }
 .projects h2 {
   font-size: 2.5rem;
-  margin-bottom: 40px;
   text-align: center;
   color: #30364B;
 }
@@ -312,8 +311,8 @@ p {
   background: #E5E7EB;
 }
 .project-card-image img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 60px;
   object-fit: cover;
 }
 .project-card-content {
