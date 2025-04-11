@@ -356,8 +356,7 @@ p {
   text-decoration: none;
   font-size: 1.6rem;
   color: #30364B;
-  margin-left: 10px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.2s;
 }
 .publication-icon:hover {
   color: #007bff; /* Optional: change to your preferred accent */
