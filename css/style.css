@@ -25,38 +25,20 @@ h1, h2, h3, h4 {
   font-weight: 800;
   letter-spacing: -0.5px;
 }
-
 p {
   font-weight: 700;
   line-height: 1.6;
 }
-
-.nav a {
-  font-weight: 700;
-}
-
 .btn {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-
-.skills-grid li {
-  font-weight: 700;
-}
-
-.footer p {
-  font-weight: 700;
-}
-
+.nav a,
+.skills-grid li,
+.footer p,
 .experience-item .year,
-.experience-item .details h3 {
-  font-weight: 700;
-}
-
-.experience-item .details h4 {
-  font-weight: 700;
-}
-
+.experience-item .details h3,
+.experience-item .details h4,
 .experience-item .details p {
   font-weight: 700;
 }
@@ -103,6 +85,7 @@ p {
 .nav a {
   text-decoration: none;
   color: #30364B;
+  font-size:1.3rem ;
   transition: color 0.3s ease;
 }
 .nav a:hover {
@@ -225,6 +208,7 @@ p {
   gap: 15px;
   list-style: none;
   padding: 10px;
+  max-width: 700px;
 }
 .skills-grid li {
   background: #30364B;
