@@ -207,6 +207,8 @@ p {
   gap: 15px;
   list-style: none;
   padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .skills-grid li {
   background: #30364B;
@@ -215,6 +217,14 @@ p {
   font-size: 1.3rem;
   color: #FFFFFF;
 }
+
+@media (max-width: 500px) {
+  .skills-grid {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
 
 /* EXPERIENCE SECTION */
 .experience {
