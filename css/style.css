@@ -85,7 +85,6 @@ p {
 .nav a {
   text-decoration: none;
   color: #30364B;
-  font-size:1rem ;
   transition: color 0.3s ease;
 }
 .nav a:hover {
@@ -209,6 +208,7 @@ p {
   list-style: none;
   padding: 10px;
   max-width: 700px;
+  align-content: center;
   width: 100%;
 }
 .skills-grid li {
